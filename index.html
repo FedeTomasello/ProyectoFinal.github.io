@@ -5,26 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Estudio Juridico</title>
 </head>
+
+
 <body class="grilla-index">
     
-    <header>
-        <h1>Estudio Juridico</h1> <!--Titulo, logo no puse porque no decidimos con mi familia cual poner-->
-            <nav>
-        
-                <ul class="barra"><!--Secciones-->
-                    <li><a href="./index.html"> Home </a></li>
-                    <li><a href="./pages/etica.html">Código de Etica</a></li>
-                    <li><a href="./pages/juridicciones.html">Juridicciones</a></li>
-                    <li><a href="./pages/areas.html">Areas</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a> </li>
-                    </ul>
-
-
-
+    <header> <!--Titulo, logo no puse porque no decidimos con mi familia cual poner-->
+            
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">  
+                <a  href="./index.html">Estudio Juridico</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./pages/etica.html">Código de Ética</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/juridicciones.html">Juridicciones</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/areas.html">Areas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
             </nav>
+
     </header>
     
     <main>
@@ -36,11 +51,12 @@
                 <article id="abogados">
                 
                 <div>
-                <img class="fotosAbogados"  data-aos="fade-right"src="assets/img/FotoAbogada.jpeg" alt="Doctora Claudia Andres Barmas">
+                <img class="fotosAbogados"  data-aos="fade-right" src="assets/img/FotoAbogada.jpeg" alt="Doctora Claudia Andres Barmas">
                 </div>
                 <div>
                 <img class="fotosAbogados"  data-aos="fade-left" src="assets/img/FotoAbogado.jpeg" alt="Doctor Andres Cristian Tomasello">
                 </div>
+                
                 <p> Acreditamos más de 30 años de trayectoria. Nos caracteriza una cultura de trabajo, donde destacan la calidad en el servicio y el compromiso y responsabilidad de los profesionales que integran el Estudio, como una atención inmediata y personalizada, por medio de un equipo que aborda cada consulta o situación de conflicto traído por el cliente, con el mayor profesionalismo y seriedad, buscando brindar un **consejo legal eficaz**.
                     También una reconocida experiencia en encuadramientos jurídicos adecuados que repercuten en la anticipación o prevención del conflicto, así como las habilidades conciliatorias y de negociación de sus abogados. Trabajamos tanto en planificación preventiva como en la gestión contenciosa, partiendo de un análisis profundo para el diseño estratégico y jurídico, trazado por nuestros valores.
                 </p>
@@ -61,5 +77,9 @@
     <script>
         AOS.init();
     </script>
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
 </body>
 </html>
