@@ -4,31 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pagina de abogados, Paginas de un Estudio Juridico">
+    <meta name="keywords" content="Estudio Juridico Paternal,Abogados Paternal,Abogado Tomasello, Abogados artigas Juicios, Sucesiones, Derecho">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>Contacto</title>
 </head>
 <body>
     <header>  
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">  
-                <h1><a class="navbar-brand" href="../index.html">Estudio Juridico</a></h1>
+                <h1><a class="navbar-brand text-white" href="../index.html">Estudio Juridico</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            
+                <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="./etica.html">Código de Ética</a>
+                    <a class="nav-link text-secondary text-decoration-none" aria-current="page" href="./etica.html">Código de Ética</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./juridicciones.html">Juridicciones</a>
+                    <a class="nav-link text-secondary text-decoration-none" href="./juridicciones.html">Juridicciones</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./areas.html">Areas</a>
+                    <a class="nav-link text-secondary text-decoration-none" href="./areas.html">Areas</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <a class="nav-link text-secondary text-decoration-none" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
                 </div>
@@ -40,20 +43,17 @@
     </header>
 
 <main>
-    <section>
-        <h2>Telefono:4583-6386</h2>
+    <section class="todoc">
+        <article>
+            <h5>Telefono:</h5><h6>4583-6386</h6>
         <br>
-        <h2>Mail Abogada:</h2><h3>cbarmas@hotmail.com</h3>
+        <h5>Mail Abogada:</h5><h6>cbarmas@hotmail.com</h6>
         <br>
-        <h2>Mail Abogado:</h2><h3>actomasello0@gmail.com</h3>
-        
-    
-
-
-    </section>
-    <section>
-        <h1>Contacto</h1>
-            <form action="">
+        <h6>Mail Abogado:</h6><p>actomasello0@gmail.com</p>
+    </article>
+    <article class="contacto">    
+        <h3 id="ACC">Contacto</h3>
+        <form action="">
                 <fieldset>
                 <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido">  
                 <input type="email"id="correo-electronico" placeholder="Mail">
@@ -69,13 +69,12 @@
             
             </fieldset>
             </form>
-
-
-    </section>
-    <section>
-        <h2>Ubicación del Estudio Juridico</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.939613922079!2d-58.4746033!3d-34.6108644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62cc1f55ce44baca!2sTomasello!5e0!3m2!1ses-419!2sar!4v1664978306878!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <h3>Avenida General Gervasio Artigas 1788 (Entre Cesar díaz y Magariños Cervantes)</h3>
+        </article>
+        <article class="ubicacion">
+        <h4>Ubicación del Estudio Juridico</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13134.939613922079!2d-58.4746033!3d-34.6108644!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62cc1f55ce44baca!2sTomasello!5e0!3m2!1ses-419!2sar!4v1664978306878!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Avenida General Gervasio Artigas 1788 (Entre Cesar díaz y Magariños Cervantes)</p>
+    </article>
     </section>
 
 
@@ -84,12 +83,31 @@
 </main>
 <footer>
 <nav>
-        <p>Telefono</p>
-        <p>Mail Abogada</p>
-        <p>Mail Abogado</p>
-        <p>Copyright &#xF7DB; </p>
-    
-        <!--Redes sociales linkeadas-->
+    <div class="container-fluid">
+        <div class="row p-5 bg-dark text-white">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">AHHDSHFD</p>
+                <a class="text-secondary text-decoration-none" href="./etica.html">Codigo de Etica</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Joya</p>
+                <a class="text-secondary text-decoration-none" href="./juridicciones.html">Juridicciones</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Contactinho</p>
+                <a class="text-secondary text-decoration-none" href="./areas.html">Areas</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h5">Contactinho</p>
+                <a class="text-secondary text-decoration-none" href="./contacto.html">Contacto</a>
+            </div>
+            <div class="col-md-12 pt-3">
+                <p class=" h6 text-white text-center">Copyright</p>
+            </div>
+        
+        </div>
+    </div>
     </nav>
 </footer>
 <script>
