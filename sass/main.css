@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body header ul li {
   font-size: 1rem;
   list-style-type: none;
@@ -22,14 +23,11 @@ body footer {
   margin: auto;
 }
 
-.caja {
-  margin: 10px 10px 10px 10px;
-  padding: 2%;
-  border: 4px solid #251a06;
+/* Home */
+#abogados {
   display: grid;
-  width: 300px;
-  height: 300px;
-  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .presentacion {
@@ -42,12 +40,60 @@ body footer {
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .textoMain {
   padding-right: 20px;
   text-align: end;
+}
+
+.textoIndex {
+  text-align: center;
+}
+
+.fotosAbogados {
+  width: 100%;
+  height: auto;
+}
+
+/* Código de ética */
+/* Juridicciones */
+#juridicciones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  margin: 10px 10px 10px 10px;
+  padding: 2%;
+}
+
+.mapajuridic {
+  padding: 5px 5px 5px 5px;
+  width: 400px;
+  height: 400px;
+  margin: 10px 10px 10px 10px;
+}
+
+/* Areas */
+.caja {
+  margin: 10px 10px 10px 10px;
+  padding: 2%;
+  border: 4px solid #251a06;
+  display: grid;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.icono {
+  display: grid;
+  justify-content: right;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 80px;
+  padding: 5%;
+  margin: 0 auto;
+  background-color: rgba(248, 248, 248, 0.4862745098);
 }
 
 .areas-s {
@@ -56,6 +102,7 @@ body footer {
   grid-template-columns: auto auto auto;
 }
 
+/* Contacto */
 #consulta {
   width: 100%;
   height: 20em;
@@ -72,91 +119,11 @@ body footer {
   align-items: stretch;
 }
 
-#ACC {
-  justify-items: flex-start;
-}
-
-.contacto {
-  display: grid;
-  margin: 10px;
-  align-items: stretch;
-}
-
-.estudio {
-  width: 400px;
-  height: 400px;
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-#abogados {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-}
-
-.fotosAbogados {
-  width: 100%;
-  height: auto;
-}
-
-.icono {
-  display: grid;
-  justify-content: right;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 80px;
-  padding: 5%;
-  margin: 0 auto;
-  background-color: rgba(248, 248, 248, 0.4862745098);
-}
-
-#juridicciones {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  margin: 10px 10px 10px 10px;
-  padding: 2%;
-}
-
-.textoIndex {
-  text-align: center;
-}
-
-.mapajuridic {
-  padding: 5px 5px 5px 5px;
-  width: 400px;
-  height: 400px;
-  margin: 10px 10px 10px 10px;
-}
-
-@media screen and (max-width: 1200px) {
-  #abogados {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  #juridicciones {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    margin: 10px 10px 10px 10px;
-    padding: 2%;
-    border: solid red;
-  }
-  .areas-s {
-    display: grid;
-    margin: auto;
-    background-color: blanchedalmond;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-  }
-}
+/* Acá se termina el código :) */
 @media screen and (max-width: 768px) {
   #abogados {
     display: grid;
     grid-template-columns: 1fr;
-    border: 10px solid black;
   }
   #juridicciones {
     display: grid;
@@ -168,8 +135,94 @@ body footer {
   .areas-s {
     display: grid;
     margin: auto;
-    background-color: blanchedalmond;
+    background-color: #e4e3e3;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .caja {
+    margin: 5px 5px 5px 5px;
+    padding: 2%;
+    border: 3px solid #251a06;
+    display: grid;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+  }
+  .icono {
+    display: grid;
+    justify-content: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 40px;
+    padding: 3%;
+    margin: 0 auto;
+    background-color: rgba(248, 248, 248, 0.4862745098);
+  }
+  .mapajuridic {
+    padding: 5px 5px 5px 5px;
+    width: 300px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+  }
+  #consulta {
+    width: 100%;
+    height: 10em;
+  }
+  #tema {
+    width: 100%;
+  }
+  .todoc {
+    display: flex;
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  .googleMaps {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 955px) {
+  .areas-s {
+    display: grid;
+    margin: auto;
+    background-color: #e4e3e3;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .caja {
+    margin: 5px 5px 5px 5px;
+    padding: 2%;
+    border: 3px solid #251a06;
+    display: grid;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+  }
+  .icono {
+    display: grid;
+    justify-content: right;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 50px;
+    padding: 3%;
+    margin: 0 auto;
+    background-color: rgba(248, 248, 248, 0.4862745098);
+  }
+}
+@media screen and (max-width: 955px) {
+  #juridicciones {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px 10px 10px 10px;
+    padding: 2%;
+  }
+  .mapajuridic {
+    padding: 3px 3px 3px 3px;
+    width: 200px;
+    height: 200px;
+    margin: 8px 8px 8px 8px;
   }
 }/*# sourceMappingURL=main.css.map */
