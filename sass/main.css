@@ -196,4 +196,8 @@ body footer {
     margin: 0 auto;
     background-color: rgba(248, 248, 248, 0.4862745098);
   }
+  .icono .TextoH5 {
+    height: 1em;
+    width: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
